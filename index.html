@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 - Interactive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="tag">WEEK 2 • CSS + BASIC JAVASCRIPT</p>
+      <h1>Interactive Image Gallery</h1>
+      <p>Click any image to open it in a larger lightbox view. Hover over the cards to see the animation.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery" id="gallery">
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Mountain landscape">
+        <div class="caption"><h2>Mountain Escape</h2><span>01</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="Tropical beach">
+        <div class="caption"><h2>Blue Ocean</h2><span>02</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Lake and forest">
+        <div class="caption"><h2>Forest Lake</h2><span>03</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=85" alt="Green forest">
+        <div class="caption"><h2>Green Forest</h2><span>04</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85" alt="Snowy mountain">
+        <div class="caption"><h2>Snow Peaks</h2><span>05</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85" alt="Sunlight through trees">
+        <div class="caption"><h2>Golden Woods</h2><span>06</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=85" alt="Nature valley">
+        <div class="caption"><h2>Nature Valley</h2><span>07</span></div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85" alt="Mountain valley">
+        <div class="caption"><h2>Adventure</h2><span>08</span></div>
+      </article>
+    </section>
+
+    <section class="skills">
+      <h2>Skills Demonstrated</h2>
+      <div class="skill-list">
+        <span>HTML5</span>
+        <span>CSS Grid</span>
+        <span>Hover Animation</span>
+        <span>JavaScript DOM</span>
+        <span>Event Handling</span>
+        <span>Lightbox</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close-btn" id="closeBtn" aria-label="Close image">&times;</button>
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <p id="lightboxCaption"></p>
+      <small id="counter"></small>
+    </div>
+    <button class="nav-btn next" id="nextBtn" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>Week 2 Internship Assignment • Interactive Image Gallery</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

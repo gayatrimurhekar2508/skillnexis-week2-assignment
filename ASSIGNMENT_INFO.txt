@@ -1,0 +1,10 @@
+WEEK 2 ASSIGNMENT
+Interactive Image Gallery
+
+This project is prepared for the Week 2 CSS + Basic JavaScript assignment.
+It demonstrates:
+1. 8-image responsive gallery
+2. Click-to-open lightbox
+3. Hover animations
+4. JavaScript DOM manipulation
+5. Event handling
